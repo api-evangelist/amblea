@@ -1,8 +1,17 @@
 aid: amblea
 name: Amblea
-description: 'Amblea is a company surfaced as a portfolio company of partech and added to the API Evangelist
-  network as a stub for enrichment. Sector: Healthcare. This profile is a lead awaiting the enrichment
-  pipeline.'
+description: >-
+  Amblea is a French mission-driven ("entreprise à mission") healthcare-logistics platform that
+  centralizes and optimizes patient (medical / sanitary) transport across the French health system.
+  Formed in 2023 from the merger of Ambler (founded 2018) and Sanilea (2013), it operates a
+  marketplace connecting healthcare establishments (hospitals, clinics, EHPADs, day-care centers)
+  with licensed transport providers (ambulance companies and medical taxi services). The platform
+  handles centralized booking and digital prescription management, shared-transport optimization
+  (grouping patients per trip), real-time tracking, budget and contract management, and automated
+  billing between facilities and transporters. Amblea reports 800+ healthcare establishments,
+  6,300 transport partner companies, and roughly 8,000 daily trips, making it one of France's
+  largest healthcare-transport coordination platforms. It exposes no public developer API,
+  documentation, or SDKs; access is via its web application and direct business arrangements.
 url: https://raw.githubusercontent.com/api-evangelist/amblea/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -10,12 +19,29 @@ x-backed-by:
 - partech
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
 modified: '2026-07-17'
+image: https://www.amblea.fr/favicon.ico
 tags:
 - Company
 - Healthcare
+- Patient Transport
+- Medical Transport
+- Healthcare Logistics
+- Marketplace
+- France
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +49,16 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/amblea-domain-security.yml
 - type: Website
   url: https://www.amblea.fr/
+- type: GitHubOrganization
+  url: https://github.com/amblerhq
+- type: Login
+  url: https://app.amblea.fr/log-in
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
